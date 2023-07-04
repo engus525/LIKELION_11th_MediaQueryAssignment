@@ -1,0 +1,142 @@
+/* Global */
+:root {
+  /* Color */
+  --color-dark-white: #bdbdbd;
+  --color-black: #070302;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+
+
+body {
+  font-family: "Arial Rounded MT Bold", serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-dark-white);
+}
+
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+/* 1. Navbar 정렬 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 30px;
+  border-bottom: 1px solid var(--color-light-grey);
+  background-color: var(--color-black);
+}
+
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  display: flex;
+  align-items: center;
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar__menu__item {
+  padding: 8px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+  color: var(--color-dark-white);
+
+}
+
+/* 2.toggle btn */
+.navbar__toggle-btn {
+  position: absolute;
+  right: 32px;
+  top: 24px;
+  font-size: 24px;
+  display: none;
+}
+
+
+
+.box-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 30vh;
+  align-items: center;
+}
+
+.box {
+  background-color: var(--color-dark-white);
+  width: 220px;
+  height: 220px;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn {
+  background-color: hotpink;
+  width: 80px;
+  height: 40px;
+  border-radius: 8%;
+  margin: 20% auto 3%;
+  display:block;
+}
+
+@media screen and (max-width: 768px){
+  .navbar__toggle-btn {
+    display: block;
+    color: hotpink;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar__menu {
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+  .navbar__menu.open {
+    display: block;
+  }
+  #btn {
+    margin-top: 5%;
+    margin-bottom: 1%;
+  }
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+  }
+  .box {
+    width: 180px;
+    height: 180px;
+  }
+
+}

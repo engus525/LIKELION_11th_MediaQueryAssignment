@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div>
+  <h3>GET요청테스트</h3>
+  <button id="btn">단어 불러오기</button>
+  <p id="word">loading...</p>
+</div>
+<div>
+  <h3>POST요청테스트</h3>
+  <p>email : eve.holt@reqres.in / password : cityslicka</p>
+  <div>
+    <input type="email" placeholder="email을 입력해주세요" id="email" value="" />
+  </div>
+  <div>
+    <input type="password" placeholder="비밀번호를 입력해주세요" id="pw" value="" />
+  </div>
+  <input type="button" onclick="Login()" value="로그인" />
+</div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

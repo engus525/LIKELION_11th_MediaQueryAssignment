@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NAVBAR</title>
+  <script
+    src="https://kit.fontawesome.com/9eb162ac0d.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="css/nav.css"/>
+  <script src="js/nav.js" defer></script>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="navbar__logo">
+    <img src="img/dog.jpeg" alt="로고" style="width: 50px">
+    <a href="#">LikeLion</a>
+  </div>
+  <ul class="navbar__menu">
+    <li class="navbar__menu__item">Home</li>
+    <li class="navbar__menu__item">About</li>
+    <li class="navbar__menu__item">Works</li>
+    <li class="navbar__menu__item">Contact</li>
+  </ul>
+  <button class="navbar__toggle-btn">
+    <i class="fas fa-bars"></i>
+  </button>
+</nav>
+
+
+<button id="btn" onclick="getWord()">Select</button>
+
+<div class="box-container">
+  <div class="box" id="box1">
+    Not Selected.
+  </div>
+  <div class="box" id="box2">
+    Not Selected.
+  </div>
+  <div class="box" id="box3">
+    Not Selected.
+  </div>
+</div>
+
+<br><span style="opacity: 15%">아니 아는 단어가 한 개도 안 나오네...</span>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
